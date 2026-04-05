@@ -1,6 +1,5 @@
-# DevStakes — Hackathon by Axios
+# DevStakes (Axios Web Wing)
 
-> A high-intensity frontend hackathon where ideas meet execution.
 
 **[Register Here →](https://forms.gle/yrQVjSU84b2Wk47Q8)**
 
@@ -146,5 +145,3 @@ Have a unique idea not listed above? Propose it!
 **[Fill the Registration Form →](https://forms.gle/yrQVjSU84b2Wk47Q8)**
 
 ---
-
-*DevStakes is organized by Axios. For queries, reach out to the organizing team.*

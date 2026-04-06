@@ -23,7 +23,7 @@
 | Time | Activity |
 |---|---|
 | 12:00 PM | Ideas revealed — teams choosing from the given set can start coding immediately |
-| 12:00 PM – 4:00 PM | Custom Idea Submission Window |
+| 12:00 PM – 6:00 PM | Custom Idea Submission Window |
 | 10:00 PM | Idea approval results announced — event officially starts for all teams |
 
 ### Day-1, Day-2, Day-3 — Coding Period
@@ -118,9 +118,9 @@ A distraction-free, highly performant note-taking application designed for devel
 
 Have a unique idea not listed above? Propose it!
 
-- Each team can submit **at most 2 custom ideas** during the Day-0 submission window (12PM–4PM).
+- Each team can submit **at most 2 custom ideas** during the Day-0 submission window (12PM–6PM).
 - Approved ideas earn an **idea bonus of 0–5 points** based on originality and quality.
-- Approval results are announced at **9PM on Day-0**.
+- Approval results are announced at **10PM on Day-0**.
 
 ---
 

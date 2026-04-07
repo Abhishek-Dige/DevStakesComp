@@ -1,4 +1,4 @@
-# StoryForge
+# StoryForge- By Team Genesis
 
 Welcome to the StoryForge repository!
 

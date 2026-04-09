@@ -20,41 +20,75 @@ export default function Layout({ children }) {
   return (
     <div className="layout-root">
       {/* TopAppBar */}
-      <header className="top-app-bar glass-panel">
+      <header className="top-app-bar glass-panel shadow-2xl">
         <div className="header-left">
           <div 
-            className="brand-logo text-glow-primary cursor-pointer"
+            className="brand-logo text-glow-primary cursor-pointer pr-5 border-r border-white/10"
             onClick={() => navigate('/', { state: { transition: 'push_back' } })}
           >
             StoryForge
           </div>
-          <nav className="header-nav hidden-mobile">
-            <a className="nav-link cursor-pointer">Fantasy</a>
-            <a className="nav-link cursor-pointer">Action</a>
-            <a className="nav-link cursor-pointer">Apocalypse</a>
-            <a className="nav-link cursor-pointer">Romance</a>
+          
+          <nav className="header-nav flex items-center gap-5 ml-5">
+            <NavItem 
+              icon={<BookOpen size={14} />} 
+              label="Home" 
+              active={currentPath === '/' || currentPath === '/landing'} 
+              onClick={() => navigate('/', { state: { transition: 'push_back' } })}
+            />
+            <NavItem 
+              icon={<Library size={14} />} 
+              label="Library" 
+              active={currentPath === '/genre-selection'} 
+              onClick={() => navigate('/genre-selection', { state: { transition: 'push_back' } })}
+            />
+            <NavItem 
+              icon={<BarChart3 size={14} />} 
+              label="Stats" 
+              active={false} 
+            />
+            <NavItem 
+              icon={<Network size={14} />} 
+              label="Nexus" 
+              active={currentPath === '/community-hub'} 
+              onClick={() => navigate('/community-hub', { state: { transition: 'push_back' } })}
+            />
           </nav>
         </div>
+
         <div className="header-right gap-4">
-          <button className="primary-btn" onClick={() => navigate('/create-story', { state: { transition: 'push' } })}>
-            Create Story
-          </button>
-          <div 
-            className="user-profile-icon cursor-pointer"
-            onClick={() => navigate('/identity', { state: { transition: 'slide_up' } })}
+          <button 
+            className="primary-btn flex items-center gap-2 text-xs py-1.5 px-4" 
+            onClick={() => navigate('/create-story', { state: { transition: 'push' } })}
           >
-            <UserCircle size={32} />
+            <Plus size={14} />
+            <span>Create Story</span>
+          </button>
+          
+          <div className="flex items-center pl-4 border-l border-white/10">
+            <div 
+              className="profile-image-wrapper rounded-full border border-primary/20 cursor-pointer overflow-hidden hover:border-primary transition-colors"
+              onClick={() => navigate('/identity', { state: { transition: 'slide_up' } })}
+            >
+              <img 
+                className="w-full h-full object-cover" 
+                src="https://picsum.photos/seed/architect/100/100" 
+                alt="Profile"
+              />
+            </div>
           </div>
         </div>
       </header>
 
+<<<<<<< HEAD
+=======
       {/* SideNavBar Perspective Rail */}
       <aside className="side-nav-bar glass-panel">
         <div className="profile-container click-target" onClick={() => navigate('/identity', { state: { transition: 'slide_up' } })}>
           <div className="profile-image-wrapper">
             <img 
               className="profile-img" 
-              src="https://picsum.photos/seed/architect/100/100" 
+              src="/assets/profile-avatar.png" 
               alt="Profile"
               referrerPolicy="no-referrer"
             />
@@ -87,6 +121,7 @@ export default function Layout({ children }) {
         </div>
       </aside>
 
+>>>>>>> d1b5dd5a593e05aae0351323533ec8c029936498
       <main className="main-content min-h-screen">
         {children}
       </main>

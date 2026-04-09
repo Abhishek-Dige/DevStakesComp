@@ -49,7 +49,7 @@ export default function Landing() {
           </p>
           <div className="hero-actions">
             <button 
-              onClick={() => navigate('/gameplay', { state: { transition: 'fade', genre: 'Cyberpunk' } })}
+              onClick={() => navigate('/create-story', { state: { transition: 'push' } })}
               className="btn-primary-large group"
             >
               <div className="btn-primary-overlay" />
@@ -59,7 +59,7 @@ export default function Landing() {
               </div>
             </button>
             <button 
-              onClick={() => navigate('/community-hub', { state: { transition: 'push' } })}
+              onClick={() => navigate('/genre-selection', { state: { transition: 'push' } })}
               className="btn-secondary-large glass-panel"
             >
               <span>Explore Realms</span>
@@ -85,7 +85,10 @@ export default function Landing() {
             <h2>Trending Realms</h2>
             <p>Discover the most immersive worlds currently being forged by the community.</p>
           </div>
-          <button className="btn-link">
+          <button 
+            className="btn-link"
+            onClick={() => navigate('/genre-selection', { state: { transition: 'push' } })}
+          >
             <span>View All Realms</span>
             <ArrowRight size={20} />
           </button>
